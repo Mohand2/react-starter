@@ -39,7 +39,6 @@ function Todo() {
                 type="submit"
                 value="delete"
                 onClick={() => {
-                  console.log(todo);
                   settodoList(todoList.filter((item) => item !== todo));
                 }}
               />
