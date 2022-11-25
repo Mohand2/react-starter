@@ -7,7 +7,8 @@
 
 import './styles.css';
 import Cta from './components/Cta';
-
+import Card from './components/card';
+import { Data } from './data';
 function App() {
   //   const [id, setId] = useState(uuidv4());
 
@@ -20,10 +21,14 @@ function App() {
   //     setId(uuidv4());
   //   };
 
+  const data = Data();
+
   return (
     <>
-      <Cta color={'red'}>
-        <p>hi im from app js </p>
+      <Cta>
+        {data.map((card) => (
+          <Card imgSrc={card.imgSrc} title={card.title} />
+        ))}
       </Cta>
 
       {/* <Memo /> */}
