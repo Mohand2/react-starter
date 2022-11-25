@@ -1,26 +1,32 @@
-import { useState, useEffect } from 'react';
+// import { useEffect } from 'react';
 
 // import Todo from './components/Todo';
-import { v4 as uuidv4 } from 'uuid';
-import Todo from './components/Todo.js'
+// import { v4 as uuidv4 } from 'uuid';
+// import Todo from './components/Todo.js';
+// import Memo from './components/Memo';
+
+import './styles.css';
+import Cta from './components/Cta';
 
 function App() {
-  const [id, setId] = useState(uuidv4());
+  //   const [id, setId] = useState(uuidv4());
 
-  useEffect(() => {
-    // setShowNotif(true);
+  //   useEffect(() => {
 
-    return () => {};
-  }, [id]);
+  //     return () => {};
+  //   }, [id]);
 
-  const handleClick = () => {
-    setId(uuidv4());
-  };
+  //   const handleClick = () => {
+  //     setId(uuidv4());
+  //   };
 
   return (
     <>
-      <h1 onClick={handleClick}>Id: {id}</h1>
-      <Todo/>
+      <Cta color={'red'}>
+        <p>hi im from app js </p>
+      </Cta>
+
+      {/* <Memo /> */}
     </>
   );
 }
