@@ -6,6 +6,7 @@ function Cta(props) {
       {props.children}
     </div>
   );
+  
 }
 
 export default Cta;
